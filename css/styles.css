@@ -276,7 +276,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-mobile@2x.jpg);
+      url(../images/hero-mobile@x2.jpg);
   }
 }
 
@@ -612,7 +612,10 @@ footer {
 
 @media screen and (min-width: 768px) {
   .box-footer {
+    display: flex;
+    flex-wrap: wrap;
     gap: 72px 24px;
+    text-align: start;
   }
 }
 
@@ -621,12 +624,14 @@ footer {
     display: flex;
     align-items: baseline;
     gap: none;
+    flex-wrap: initial;
   }
 }
 
-.footer-web (
+.footer-web {
+}
 
-) .footer-logo {
+.footer-logo {
   color: var(--color-light);
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -638,19 +643,45 @@ footer {
 }
 .footer-p {
   color: var(--color-accent);
-  max-width: 264px;
+  max-width: 268px;
   margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
 }
+
+@media screen and (min-width: 768px) {
+  .footer-p {
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-p {
+  }
+}
+
 /* Social icon footer */
 
 .footer-social {
-  margin-left: 120px;
+  margin-top: 72px;
 }
 
-.foot {
+@media screen and (min-width: 768px) {
+  .footer-social {
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 120px;
+  }
+}
+
+.title-footer {
   color: var(--color-secondary);
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
 }
 .footer-list {
   display: flex;
@@ -686,19 +717,28 @@ footer {
 /* Subscribe */
 
 .subscribe-conteiner {
-  margin-left: 80px;
+  margin-top: 72px;
 }
+
+@media screen and (min-width: 1200px) {
+  .subscribe-conteiner {
+    margin-left: 80px;
+  }
+}
+
 .subscribe-form {
   display: flex;
   margin-top: 16px;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .label-form {
-  margin-right: 24px;
 }
 .input-footer {
   color: var(--color-secondary);
-  width: 264px;
+  width: 398px;
   height: 40px;
   padding: 8px;
   padding-left: 16px;
@@ -711,6 +751,18 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .input-footer {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-footer {
+  }
+}
+
 .input-footer:focus {
   border-color: var(--color-iris);
 }
