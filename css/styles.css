@@ -289,8 +289,19 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-tablet.jpg);
-    background-size: cover;
     max-width: 768px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tablet@x2.jpg);
   }
 }
 
@@ -305,6 +316,18 @@ img {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-image@x2.jpg);
   }
 }
 
