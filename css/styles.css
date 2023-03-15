@@ -145,6 +145,8 @@ img {
   }
 }
 
+/* <!-- Mobile Menu --> */
+
 .js-menu-container {
   position: fixed;
   width: 100%;
@@ -191,6 +193,84 @@ img {
 .js-close-menu:hover {
   fill: var(--color-secondary);
   background-color: var(--color-ocean);
+}
+
+.menu-mobile-conteiner {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 35px 40px 40px;
+  margin-bottom: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.menu-mobile-nav {
+  margin-bottom: 284px;
+}
+
+.mobile-link-ul {
+}
+
+.mobile-link {
+  display: block;
+  color: var(--color-brand);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.porfolio {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.active {
+  color: var(--color-ocean);
+}
+
+.mobile-link:hover,
+.mobile-link:focus {
+  color: var(--color-ocean);
+}
+
+.mobile-contacts {
+}
+
+.mobile-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.mobile-mail {
+  color: var(--color-prymary);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: 40px;
+  display: block;
+}
+
+.mobile-socials {
+  display: flex;
+  align-items: flex-end;
+  gap: 56px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  margin-right: 25px;
+  
 }
 
 .menu-burger-icon {
@@ -278,6 +358,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-mobile@x2.jpg);
+    background-size: cover;
   }
 }
 
