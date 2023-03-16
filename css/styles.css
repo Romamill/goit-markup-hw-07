@@ -69,7 +69,7 @@ img {
 header {
   background-color: var(--color-secondary);
   border-bottom: 1px solid var(--color-accent);
-  max-width: 1440px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -89,7 +89,13 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 76px;
+  gap: 120px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    gap: 76px;
+  }
 }
 
 .header-link-ul,
@@ -414,9 +420,15 @@ img {
   margin: 0 auto 72px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-title {
     font-size: 56px;
+    margin: 0 auto 72px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
     margin: 0 auto 48px;
   }
 }
@@ -713,20 +725,23 @@ footer {
 @media screen and (min-width: 768px) {
   .box-footer {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 72px 24px;
     text-align: start;
+    align-items: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .box-footer {
     display: flex;
-    align-items: baseline;
     gap: none;
     flex-wrap: initial;
   }
 }
+
+
 
 .footer-web {
 }
@@ -817,7 +832,7 @@ footer {
 /* Subscribe */
 
 .subscribe-conteiner {
-  margin-top: 72px;
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -832,6 +847,19 @@ footer {
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    
+  }
 }
 
 .label-form {
