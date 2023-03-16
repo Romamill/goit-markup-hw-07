@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-02</title>
+    <title>goit-markup-hw-07</title>
     <!-- Fonts -->
     <link
       rel="stylesheet"
@@ -27,18 +27,21 @@
             <a class="logo" href="./index.html"
               ><span class="span-web">Web</span>Studio</a
             >
-            <ul class="header-ul">
-              <li><a class="header-link" href="./index.html">Studio</a></li>
+
+            <ul class="header-link-ul">
               <li>
-                <a class="header-link current active" href="./portfolio.html"
-                  >Portfolio</a
-                >
+                <a class="header-link" href="./index.html">Studio</a>
               </li>
-              <li><a class="header-link" href="">Contacts</a></li>
+              <li>
+                <a class="header-link current active" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="header-link" href="">Contacts</a>
+              </li>
             </ul>
           </nav>
           <address>
-            <ul class="header-ul">
+            <ul class="header-contacts">
               <li>
                 <a class="mail" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -49,6 +52,83 @@
               </li>
             </ul>
           </address>
+        </div>
+        <div class="menu-burger-conteiner">
+          <a class="logo" href="./portfolio.html"
+            ><span class="span-web">Web</span>Studio</a
+          >
+          <button class="js-open-menu" type="button">
+            <svg class="menu-burger-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div class="js-menu-container">
+          <button class="js-close-menu" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="menu-mobile-conteiner">
+          <nav class="menu-mobile-nav">
+           <ul class="mobile-link-ul">
+              <li>
+                <a class="mobile-link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="mobile-link porfolio" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="mobile-link active" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <address>
+            
+            <ul class="mobile-contacts">
+              <li>
+                <a class="mobile-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="mobile-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-socials">
+                  <li class="socials-item">
+                    <a class="socials-link" href="">
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link" href="">
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link" href="">
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link" href="">
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
         </div>
       </div>
     </header>
@@ -78,12 +158,12 @@
               <button class="portfolio-button" type="button">Marketing</button>
             </li>
           </ul>
-
+<!-- Cards Menu -->
           <ul class="menu-content">
             <li class="menu-item">
               <a class="menu-link" href="">
                 <div class="menu-wrapper">
-                  <img
+                  <img class="img-portfolio"
                     src="./images/banking.jpg"
                     alt="Banking App Interface Concept"
                     width="360"
@@ -99,8 +179,8 @@
                 </div>
 
                 <div class="menu-list">
-                  <h3 class="title-h3">Banking App Interface Concept</h3>
-                  <p class="title-text">App</p>
+                  <h3 class="title-cards-menu">Banking App Interface Concept</h3>
+                  <p class="text-cards-menu">App</p>
                 </div>
               </a>
             </li>
@@ -122,8 +202,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Cashless Payment</h3>
-                  <p class="title-text">Marketing</p>
+                  <h3 class="title-cards-menu">Cashless Payment</h3>
+                  <p class="text-cards-menu">Marketing</p>
                 </div>
               </a>
             </li>
@@ -145,8 +225,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Meditaion App</h3>
-                  <p class="title-text">App</p>
+                  <h3 class="title-cards-menu">Meditaion App</h3>
+                  <p class="text-cards-menu">App</p>
                 </div>
               </a>
             </li>
@@ -168,8 +248,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Taxi Service</h3>
-                  <p class="title-text">Marketing</p>
+                  <h3 class="title-cards-menu">Taxi Service</h3>
+                  <p class="text-cards-menu">Marketing</p>
                 </div>
               </a>
             </li>
@@ -191,8 +271,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Screen Illustrations</h3>
-                  <p class="title-text">Design</p>
+                  <h3 class="title-cards-menu">Screen Illustrations</h3>
+                  <p class="text-cards-menu">Design</p>
                 </div>
               </a>
             </li>
@@ -214,8 +294,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Online Courses</h3>
-                  <p class="title-text">Marketing</p>
+                  <h3 class="title-cards-menu">Online Courses</h3>
+                  <p class="text-cards-menu">Marketing</p>
                 </div>
               </a>
             </li>
@@ -237,8 +317,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Instagram Stories Concept</h3>
-                  <p class="title-text">Design</p>
+                  <h3 class="title-cards-menu">Instagram Stories Concept</h3>
+                  <p class="text-cards-menu">Design</p>
                 </div>
               </a>
             </li>
@@ -260,8 +340,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Organic Food</h3>
-                  <p class="title-text">Web Site</p>
+                  <h3 class="title-cards-menu">Organic Food</h3>
+                  <p class="text-cards-menu">Web Site</p>
                 </div>
               </a>
             </li>
@@ -283,8 +363,8 @@
                   </div>
                 </div>
                 <div class="menu-list">
-                  <h3 class="title-h3">Fresh Coffee</h3>
-                  <p class="title-text">Web Site</p>
+                  <h3 class="title-cards-menu">Fresh Coffee</h3>
+                  <p class="text-cards-menu">Web Site</p>
                 </div>
               </a>
             </li>
@@ -297,7 +377,7 @@
 
     <footer>
       <div class="conteiner box-footer">
-        <div>
+        <div class="footer-web">
           <a class="footer-logo" href="./index.html"
             ><span class="span-web">Web</span>Studio</a
           >
@@ -307,7 +387,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <h3 class="title-h3 foot">Social media</h3>
+          <h3 class="title-footer">Social media</h3>
           <ul class="footer-list">
             <li class="footer-item">
               <a class="footer-link" href="">
@@ -339,8 +419,9 @@
             </li>
           </ul>
         </div>
+
         <div class="subscribe-conteiner">
-          <h3 class="title-h3 foot">Subscribe</h3>
+          <h3 class="title-footer">Subscribe</h3>
           <form class="subscribe-form" name="subscribe-form">
             <label class="label-form">
               <input
@@ -360,5 +441,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
