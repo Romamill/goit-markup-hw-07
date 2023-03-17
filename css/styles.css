@@ -356,7 +356,6 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-mobile@x2.jpg);
-    background-size: cover;
   }
 }
 
@@ -731,7 +730,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: none;
+    gap: 0;
     flex-wrap: initial;
   }
 }
@@ -748,7 +747,7 @@ footer {
 }
 .footer-p {
   color: var(--color-accent);
-  max-width: 268px;
+  width: 246px;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -757,7 +756,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer-p {
-    max-width: 264px;
+    width: 264px;
   }
 }
 
@@ -765,6 +764,12 @@ footer {
 
 .footer-social {
   margin-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -810,6 +815,16 @@ footer {
 }
 
 /* Subscribe */
+
+.subscribe-conteiner {
+  margin-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-conteiner {
+    margin-top: 0;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .subscribe-conteiner {
